@@ -11,6 +11,7 @@ variables:
   support_netcoreapp21: true
   support_netcoreapp31: true
   support_net5_0: true
+  disable_tests: true
 
 resources:
   repositories:

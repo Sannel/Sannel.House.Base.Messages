@@ -22,4 +22,7 @@
 	    <PackagePath></PackagePath>
 	  </None>
 	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Sannel.House.Base.Sensor" Version="0.9.515-beta" />
+	</ItemGroup>
 </Project>

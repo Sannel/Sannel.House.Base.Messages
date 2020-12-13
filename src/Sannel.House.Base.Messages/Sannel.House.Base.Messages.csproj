@@ -2,26 +2,8 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp2.1;netcoreapp3.1;net5.0</TargetFrameworks>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<AssemblyVersion>$(Major).$(Minor).$(Patch).$(BuildNumber)</AssemblyVersion>
-		<FileVersion>$(Major).$(Minor).$(Patch).$(BuildNumber)</FileVersion>
-		<Version Condition="'$(Configuration)' != 'Release'">$(Major).$(Minor).$(Patch)-beta</Version>
-		<Version Condition="'$(Configuration)' == 'Release'">$(Major).$(Minor).$(Patch)</Version>
-		<Authors>Adam Holt</Authors>
 		<Description>Classes Representing Common Messages sent between different services</Description>
-		<PackageLicenseUrl></PackageLicenseUrl>
-		<PackageProjectUrl>https://github.com/Sannel/Sannel.House.Base.Messages</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Sannel/Sannel.House.Base.Messages</RepositoryUrl>
-		<PackageReleaseNotes></PackageReleaseNotes>
-		<Company>Sannel Software, L.L.C.</Company>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<Copyright>Sannel Software, L.L.C. $([System.DateTime]::Now.ToString('yyyy'))</Copyright>
 	</PropertyGroup>
-	<ItemGroup>
-	  <None Include="..\..\LICENSE">
-	    <Pack>True</Pack>
-	    <PackagePath></PackagePath>
-	  </None>
-	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Sannel.House.Base.Sensor" Version="0.9.515-beta" />
 	</ItemGroup>

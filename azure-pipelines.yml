@@ -2,6 +2,8 @@ trigger:
 - master
 - develop
 
+name: $(Date:yyyyMMdd)$(Rev:rr)
+
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -12,6 +14,9 @@ variables:
   support_netcoreapp31: true
   support_net5_0: true
   disable_tests: true
+  major: 1
+  minor: 0
+  patch: 0
 
 resources:
   repositories:

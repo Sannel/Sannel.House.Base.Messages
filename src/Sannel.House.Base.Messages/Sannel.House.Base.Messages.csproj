@@ -5,6 +5,6 @@
 		<Description>Classes Representing Common Messages sent between different services</Description>
 	</PropertyGroup>
 	<ItemGroup>
-	  <PackageReference Include="Sannel.House.Base.Sensor" Version="0.9.515-beta" />
+		<PackageReference Include="Sannel.House.Base.Sensor" Version="1.0.0-beta.*" />
 	</ItemGroup>
 </Project>

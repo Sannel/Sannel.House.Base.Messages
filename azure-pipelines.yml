@@ -2,6 +2,11 @@ trigger:
 - master
 - develop
 
+pr:
+- master
+- develop
+- feature/*
+
 name: $(Date:yyyyMMdd)$(Rev:rr)
 
 pool:
@@ -14,9 +19,9 @@ variables:
   support_netcoreapp31: true
   support_net5_0: true
   disable_tests: true
-  major: 1
-  minor: 0
-  patch: 0
+  Major: 1
+  Minor: 0
+  Patch: 0
 
 resources:
   repositories:

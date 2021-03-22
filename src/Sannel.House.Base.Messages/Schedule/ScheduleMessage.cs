@@ -9,19 +9,20 @@
    See the License for the specific language governing permissions and
    limitations under the License.*/
 
-namespace Sannel.House.Base.Messages.Device
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Sannel.House.Base.Messages.Schedule
 {
-	/// <summary>
-	/// Remove Device Message
-	/// </summary>
-	/// <remarks>
-	/// This message means that a device has been removed from the devices project
-	/// </remarks>
-	public class RemoveDeviceMessage
+	public class ScheduleMessage
 	{
 		/// <summary>
-		/// The Id of the device that should be removed
+		/// Gets or sets the schedule key.
 		/// </summary>
-		public int DeviceId { get; set; }
+		/// <value>
+		/// The schedule key.
+		/// </value>
+		public Guid ScheduleKey { get; set; }
 	}
 }
